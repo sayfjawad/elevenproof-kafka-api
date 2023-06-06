@@ -16,7 +16,7 @@ function install() {
   helm install --wait --wait-for-jobs --debug --values "$BASEDIR/openshift/values.yaml,$BASEDIR/openshift/values-local.yaml" "integratie-test" "$BASEDIR/openshift"
 }
 function portforwarding() {
-  kubectl port-forward service/elevenproof-rest-api 8080:8080 &
+  kubectl port-forward service/elevenproof-kafka-api 8080:8080 &
 }
 function template() {
   helm template r1 --debug --values "$BASEDIR/openshift/values.yaml,$BASEDIR/openshift/values-local.yaml" "$BASEDIR/openshift"

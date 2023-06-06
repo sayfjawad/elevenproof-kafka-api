@@ -65,5 +65,5 @@ spec:
           secret:
             secretName: {{ .Values.config.all.name }}-secrets
             items:
-              - key: elevenproof-rest-api
-                path: elevenproof-rest-api/private_key
+              - key: elevenproof-kafka-api
+                path: elevenproof-kafka-api/private_key

@@ -8,7 +8,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <parent>
-    <artifactId>elevenproof-rest-api</artifactId>
+    <artifactId>elevenproof-kafka-api</artifactId>
     <groupId>nl.multicode.elevenproof</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
@@ -62,7 +62,7 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>3.0.5</version>
+        <version>3.1.0</version>
         <executions>
           <execution>
             <goals>
@@ -77,8 +77,8 @@
         <artifactId>jib-maven-plugin</artifactId>
         <configuration>
           <to>
-            <image>elevenproof-rest-api</image>
-            <image>registry.hub.docker.com/sayf4all/elevenproof-rest-api:latests</image>
+            <image>elevenproof-kafka-api</image>
+            <image>registry.hub.docker.com/sayf4all/elevenproof-kafka-api:latests</image>
             <auth>
               <username>${docker.hub.user}</username>
               <password>${docker.hub.pass}</password>
